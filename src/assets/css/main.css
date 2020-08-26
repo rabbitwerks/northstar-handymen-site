@@ -1,0 +1,17 @@
+:root {
+  --yellow: #fcce23;
+  --red: #eb1c24;
+  --off-white: #f4f4f4;
+  --grey: #616264;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}

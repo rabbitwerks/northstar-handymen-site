@@ -1,10 +1,8 @@
 <template>
   <div class="landing--outer">
-    <div class="hero-image-container">
 
-    </div>
     <div class="welcome-text">
-      Northstar Handymen
+      <h1>Northstar Handymen</h1>
     </div>
 
   </div>
@@ -13,12 +11,9 @@
 <script>
 export default {
 
-}
+};
 </script>
 
 <style scoped>
 
-
-
 </style>
-

@@ -1,4 +1,5 @@
 # TODO
 
-- determine layout scheme
-- import flexbox util library
+- determine layout color scheme [done]
+- import flexbox util library [done]
+- build main site layout
