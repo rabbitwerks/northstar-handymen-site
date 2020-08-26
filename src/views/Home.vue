@@ -1,77 +1,125 @@
 <template>
   <div class="home">
-    <section class="hero--section">
-      <div class="hero--image--container">
-        <img src="../assets/img/handyman.jpg" alt="" class="hero--image">
-      </div>
-      <div class="hero--inner fxbx">
-        <div class="promo-heading f2">
-          <h1>
-            <span class="highlight--yellow">Summer Savings!</span>
-            <br>
-            <span class="highlight--red">20%</span>
-             Off All <span class="highlight--yellow">Landscape</span> and
-             <span class="highlight--red">Outdoor Concrete</span> Jobs!</h1>
-        </div>
-        <div class="short-contact-form f1">
-          This is where the contact form will go
-        </div>
-      </div>
-    </section>
+    <Hero-Section />
     <section class="main-services--section">
-
+      <h1 class="ms--header">What We Do</h1>
+      <p class="ms--subtext">
+        Our number one priority is to deliver the finest quality jobs
+        in carpentery, landscape, remodeling and demolition.
+        Tackling both interior and exterior jobs makes us an extremely versitile crew.
+        We also specialize in one-off odd jobs such as small engine repair, lawn care, etc.
+        <br />
+        Call now for a free estimate!
+      </p>
+      <div class="panel--container fxbx flexgap-7">
+        <div class="panel--item f1">
+          <img
+            src="../assets/img/panel img/dccdad0439.0.jpeg"
+            alt=""
+            class="panel--img"
+          />
+          <h3 class="panel--header">Indoors</h3>
+          <p>
+            We specialize in carpentery, plumbing and drywall.
+            We also provide indoor demolition and remodeling services.
+            Commercial site work available upon request.
+          </p>
+        </div>
+        <div class="panel--item f1">
+          <img
+            src="../assets/img/panel img/backyard-landscaping-design.jpg"
+            alt=""
+            class="panel--img"
+          />
+          <h3 class="panel--header">Outdoors</h3>
+          <p>
+            We specialize in carpentery, plumbing and drywall.
+            We also provide indoor demolition and remodeling services.
+            Commercial site work available upon request.
+          </p>
+        </div>
+        <div class="panel--item f1">
+          <img
+            src="../assets/img/panel img/Small-Engine-Service-Center-Blog-1.jpg"
+            alt=""
+            class="panel--img"
+          />
+          <h3 class="panel--header">Odd Jobs</h3>
+          <p>
+            We specialize in carpentery, plumbing and drywall.
+            We also provide indoor demolition and remodeling services.
+            Commercial site work available upon request.
+          </p>
+        </div>
+      </div>
     </section>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import heroSection from '../components/hero-section/Hero_Section.vue';
 
 export default {
   name: 'Home',
+  components: {
+    'Hero-Section': heroSection,
+  },
 };
 </script>
 
 <style scoped>
 
 .home {
-  border-top: 7px solid #000;
-}
-
-.hero--section {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 1);
-}
-
-.hero--image {
-  width: 100%;
-  max-height: 100vh;
-  position: absolute;
-  opacity: .5;
-}
-
-.hero--inner {
-  position: relative;
-  z-index: 10;
-  width: 70%;
-  margin: 0 15%;
-  padding: 11rem 0;
-}
-
-.promo-heading {
-  color: var(--off-white);
-  font-size: 3rem;
-}
-
-.short-contact-form {
-  background-color: var(--off-white);
-  padding: 1rem;
-  border: 5px solid var(--grey);
-  border-radius: 1rem;
+  border-top: 7px solid var(--black);
 }
 
 /* main services */
 .main-services--section {
   height: 100vh;
+  padding: 0 15%;
+  text-align: center;
+  border-top: 7px solid var(--yellow);
 }
+
+.ms--header {
+  font-size: 4rem;
+  padding: 1.5rem 0 .5rem 0;
+}
+
+.ms--subtext {
+  font-size: 1.15rem;
+  margin: 0 15% 8% 15%;
+}
+
+.panel--container {
+  width: 100%;
+}
+
+.panel--item {
+  height: 25rem;
+  border: 3px solid var(--grey);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.panel--item p {
+  font-size: 1.1rem;
+}
+
+.panel--img {
+  width: 100%;
+  transition: transform .2s;
+  border-bottom: 3px solid var(--grey);
+}
+
+.panel--img:hover {
+  transform: scale(1.1) translateY(-5%);
+}
+
+.panel--header {
+  padding: .5rem 0;
+  font-size: 1.3rem;
+}
+
 </style>

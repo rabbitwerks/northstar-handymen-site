@@ -281,6 +281,24 @@
 .flexgap-5 > *:last-child{
  margin: 0 0 0 1.5rem;
 }
+.flexgap-6 > *{
+ margin: 0 2rem;
+}
+.flexgap-6 > *:first-child {
+  margin: 0 2rem 0 0;
+}
+.flexgap-6 > *:last-child{
+ margin: 0 0 0 2rem;
+}
+.flexgap-7 > *{
+ margin: 0 2.5rem;
+}
+.flexgap-7 > *:first-child {
+  margin: 0 2.5rem 0 0;
+}
+.flexgap-7 > *:last-child{
+ margin: 0 0 0 2.5rem;
+}
 
 
 .flexdir-col.flexgap-1 > *{
@@ -327,6 +345,24 @@
 }
 .flexdir-col.flexgap-5 > *:last-child{
  margin: 1.5rem 0 0 0;
+}
+.flexdir-col.flexgap-6 > *{
+ margin: 2rem 0;
+}
+.flexdir-col.flexgap-6 > *:first-child {
+  margin: 0 0 2rem 0;
+}
+.flexdir-col.flexgap-6 > *:last-child{
+ margin: 2rem 0 0 0;
+}
+.flexdir-col.flexgap-7 > *{
+ margin: 2.5rem 0;
+}
+.flexdir-col.flexgap-7 > *:first-child {
+  margin: 0 0 2.5rem 0;
+}
+.flexdir-col.flexgap-7 > *:last-child{
+ margin: 2.5rem 0 0 0;
 }
 
 
