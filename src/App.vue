@@ -1,19 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav" class="fxbx">
-      <div class="nav-item">
-        <router-link to="/">Home</router-link>
-      </div>
-      <router-link to="/about">About</router-link>
-      <router-link to="/about">Gallery</router-link>
-      <router-link to="/about">Contact</router-link>
-    </div>
-    <div class="hero--img-container">
-      <img src="./assets\img\Linkdin cover.jpg" alt="" class="hero--img">
+    <Nav-Bar />
+    <div class="header-banner--container">
+      <img src="./assets\img\Linkdin cover.jpg" alt="" class="header-banner--img">
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import navBar from './components/nav/Nav_Bar.vue';
+
+export default {
+  components: {
+    'Nav-Bar': navBar,
+  },
+};
+</script>
 
 <style>
 @import url('./assets/css/main.css');
@@ -24,30 +27,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#nav {
-  position: absolute;
-  width: 100%;
-  padding: 30px;
-  background-color: var(--black);
-}
-
-.nav-item {
-  width: 6rem;
-}
-#nav a {
-  font-weight: bold;
-  color: var(--yellow);
-}
-
-#nav a:hover {
-  color: var(--red);
-}
-
-#nav a.router-link-exact-active {
-  color: var(--red);
-}
-
-.hero--img {
+.header-banner--img {
   width: 100%;
 }
 </style>
