@@ -24,7 +24,6 @@ export default {
 .nav-item {
   width: 8rem;
   text-align: center;
-  font-family: 'Archivo Black', sans-serif;
 }
 
 .nav-item a {

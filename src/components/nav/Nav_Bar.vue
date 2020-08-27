@@ -5,7 +5,11 @@
     <Nav-Item target="/gallery" text="GALLERY" />
     <Nav-Item target="/contact" text="CONTACT" />
     <div class="spacer f4"></div>
-    <div class="socials f2"></div>
+    <div class="socials f2 fxbx flex-justify-end">
+      <div class="phone-number f1">
+        651-472-2099
+      </div>
+    </div>
   </div>
 </template>
 
@@ -24,6 +28,12 @@ export default {
   position: absolute;
   width: 100%;
   padding: 30px;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.phone-number {
+  font-weight: bold;
+  color: var(--yellow);
 }
 
 </style>
