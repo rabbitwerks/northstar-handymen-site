@@ -22,5 +22,6 @@ export default {
 .promo-heading {
   color: var(--off-white);
   font-size: 3rem;
+  font-family: 'Archivo Black', sans-serif;
 }
 </style>

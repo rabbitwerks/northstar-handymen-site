@@ -2,6 +2,22 @@
   <div class="home">
     <Hero-Section />
     <Main-Services-Section />
+    <section class="customer-testimonies--section">
+      <div class="ct--outer">
+        <span class="ct--header">Don't Take Our Word For It...</span>
+        <div class="ct--inner fxbx flexgap-7">
+          <div class="ct--panel f1 ct-1">
+            <div class="panel--inner--header fxbx">
+              <div class="circle-avatar"></div>
+              <div class="cust--name"></div>
+              one
+            </div>
+          </div>
+          <div class="ct--panel f1 ct-2">two</div>
+          <div class="ct--panel f1 ct-3">three</div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -25,71 +41,42 @@ export default {
   border-top: 7px solid var(--black);
 }
 
-/* main services */
-.main-services--section {
+.customer-testimonies--section {
   height: 100vh;
-  padding: 0 15%;
-  text-align: center;
-  border-top: 7px solid var(--yellow);
+  background-color: var(--grey);
+  border-top: 7px solid var(--red);
 }
 
-.ms--header {
+.ct--outer {
+  padding: 2% 15%;
+}
+
+.ct--header {
   font-size: 4rem;
-  padding: 1.5rem 0 .5rem 0;
+  color: var(--yellow);
+  border-bottom: 7px solid var(--yellow);
+  font-family: 'Archivo Black', sans-serif;
 }
 
-.ms--subtext {
-  font-size: 1.15rem;
-  margin: 0 15% 5% 15%;
-}
-
-.panel--container {
+.ct--inner {
   width: 100%;
 }
 
-.panel--item {
-  height: 25rem;
-  border: 5px solid var(--grey);
+.ct--panel {
+  margin-top: 5rem;
+  height: 20rem;
+  border: 5px solid var(--black);
   border-radius: .5rem;
-  transition: border 150ms;
-  overflow: hidden;
-  filter: drop-shadow(0 -.5rem 1rem var(--grey));
+  background-color: var(--off-white);
+  filter: drop-shadow(0 -1rem 1rem #fff);
+  position: relative;
 }
 
-.panel--item:hover {
-  border: 5px solid var(--yellow);
-}
-
-.panel--item p {
-  font-size: 1.1rem;
-}
-
-.panel--img {
-  width: 100%;
-  transition: transform .2s;
-  border-bottom: 3px solid var(--grey);
-}
-
-.panel--img:hover {
-  transform: scale(1.1) translateY(-5%);
-  border-bottom: 3px solid var(--red);
-}
-
-.panel--header {
-  padding: .5rem 0;
-  font-size: 1.3rem;
-}
-
-.panel--header-link {
-  text-decoration: none;
-}
-
-.panel--header-link:visited {
-  color: var(--black);
-}
-
-.mission-statement {
-  padding-top: 4rem;
+.circle-avatar {
+  height: 6rem;
+  width: 6rem;
+  border: 3px solid var(--black);
+  border-radius: 50%;
 }
 
 </style>

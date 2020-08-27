@@ -78,6 +78,7 @@ export default {
 .ms--header {
   font-size: 4rem;
   padding: 1.5rem 0 .5rem 0;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 .ms--subtext {

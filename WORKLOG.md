@@ -13,6 +13,13 @@
 - Built out basic hero section on Home.vue
 - Built out navbar components: navbar, navitem
 - Built Hero section, What We Do section with 3 panels and anims
+- Hero section componentized
 
 ## 8/26/20
 
+- Finished What We Do section (main services)
+- Added drop-shadow to panels
+- Started on Customer Testimonies section
+- Main services has been componentized
+- Hyperlinked main service panels, no routes yet
+- Deleted hello world vue
