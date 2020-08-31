@@ -1,6 +1,7 @@
 <template>
   <div class="nav-bar fxbx">
     <Nav-Item target="/" text="HOME" />
+    <Nav-Item target="/service" text="SERVICE" />
     <Nav-Item target="/about" text="ABOUT" />
     <Nav-Item target="/gallery" text="GALLERY" />
     <Nav-Item target="/contact" text="CONTACT" />

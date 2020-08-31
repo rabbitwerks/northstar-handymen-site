@@ -5,15 +5,18 @@
       <img src="./assets\img\Linkdin cover.jpg" alt="" class="header-banner--img">
     </div>
     <router-view/>
+    <Footer />
   </div>
 </template>
 
 <script>
 import navBar from './components/nav/Nav_Bar.vue';
+import footer from './components/footer/Footer.vue';
 
 export default {
   components: {
     'Nav-Bar': navBar,
+    Footer: footer,
   },
 };
 </script>
@@ -30,4 +33,5 @@ export default {
 .header-banner--img {
   width: 100%;
 }
+
 </style>

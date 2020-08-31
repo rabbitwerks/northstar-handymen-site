@@ -22,7 +22,7 @@ export default {
 <style scoped>
 
 .nav-item {
-  width: 8rem;
+  width: 7rem;
   text-align: center;
 }
 

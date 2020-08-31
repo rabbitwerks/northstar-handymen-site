@@ -30,3 +30,19 @@ body {
 .highlight--yellow {
   color: var(--yellow);
 }
+
+.stroke--black {
+  -webkit-text-stroke: 3px var(--black);
+}
+.stroke--red {
+  -webkit-text-stroke: 3px var(--red);
+}
+.stroke--yellow {
+  -webkit-text-stroke: 3px var(--yellow);
+}
+.stroke--off-white {
+  -webkit-text-stroke: 3px var(--off-white);
+}
+.stroke--grey {
+  -webkit-text-stroke: 3px var(--grey);
+}

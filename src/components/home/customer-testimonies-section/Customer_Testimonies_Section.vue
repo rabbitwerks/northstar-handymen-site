@@ -1,65 +1,72 @@
 <template>
   <section class="customer-testimonies--section">
     <div class="ct--outer">
-      <span class="ct--header">Don't Take Our Word For It...</span>
+      <h1 class="ct--header">
+        Don't
+        <span class="highlight--yellow stroke--black">Take Our Word</span>
+        For It...
+      </h1>
+      <h2 class="subtext">
+        Check out what
+        <span class="highlight--red">our customers</span> have to say!
+      </h2>
       <div class="ct--inner fxbx flexgap-7">
-        <div class="ct--panel f1 fxbx flexdir-col ct-1">
-          <div class="panel--inner--header fxbx">
-            <div class="circle-avatar">
-              <img class="avatar-img"
-                src="@/assets/img/customer avatars/jennifer stock photo.jpg" alt="">
-            </div>
-            <span class="cust--name fxbx sp-ctr">
-              Jennifer M.
-            </span>
-          </div>
-          <div class="panel--inner--body">
-            Choosing Northstar Handymen was the best desicion I made this year!
-            Not only were my deck stairs repaired but the job was done fast and very affordably.
-            Definitely recommending these guys!
-          </div>
-        </div>
-        <div class="ct--panel f1 fxbx flexdir-col ct-1">
-          <div class="panel--inner--header fxbx">
-            <div class="circle-avatar">
-              <img class="avatar-img"
-                src="@/assets/img/customer avatars/eddie stock photo.jpg" alt="">
-            </div>
-            <span class="cust--name fxbx sp-ctr">
-              Eddie T.
-            </span>
-          </div>
-          <div class="panel--inner--body">
-            Choosing Northstar Handymen was the best desicion I made this year!
-            Not only were my deck stairs repaired but the job was done fast and very affordably.
-            Definitely recommending these guys!
-          </div>
-        </div>
-        <div class="ct--panel f1 fxbx flexdir-col ct-1">
-          <div class="panel--inner--header fxbx">
-            <div class="circle-avatar">
-              <img class="avatar-img"
-                src="../../../assets/img/customer avatars/oldies stock photo.jpg" alt="">
-            </div>
-            <span class="cust--name fxbx sp-ctr">
-              Jan & Jerry
-            </span>
-          </div>
-          <div class="panel--inner--body">
-            Choosing Northstar Handymen was the best desicion I made this year!
-            Not only were my deck stairs repaired but the job was done fast and very affordably.
-            Definitely recommending these guys!
-          </div>
-        </div>
+
+        <CT-Panel
+          :custData="custTestsData.cust_1"
+        />
+        <CT-Panel
+          :custData="custTestsData.cust_2"
+        />
+        <CT-Panel
+          :custData="custTestsData.cust_3"
+        />
 
       </div>
+        <div class="after-text fxbx sp-ctr">
+          <h3>
+            Rest assured that with Northstar Handymen you be getting the best quality work
+            for the best value in town.
+          </h3>
+        </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {
+import ctPanel from './ct-panel/CT_Panel_Main.vue';
 
+export default {
+  data() {
+    return {
+      custTestsData: {
+        cust_1: {
+          name: 'Jennifer M.',
+          body: `Choosing Northstar Handymen was the best desicion I made this year!
+            Not only were my deck stairs repaired but the job was done fast and very affordably.
+            Definitely recommending these guys!`,
+          imgName: 'jennifer stock photo.jpg',
+        },
+        cust_2: {
+          name: 'Eddie T.',
+          body: `Fast, efficient, reliable and affordable.
+            My 4 favorite things when I look for a handyman to do some projects for me.
+            Super friendly and willing to accomodate requests. 10 out of 10.`,
+          imgName: 'eddie stock photo.jpg',
+        },
+        cust_3: {
+          name: 'Jan & Jerry',
+          body: `Matt and Abe helped us to find the best solution for our
+            three-season porch renovation while keeping the costs as budget friendly as possible.
+            The results were outstanding and we couldn't be happier. Thank you Northstar Handymen!`,
+          imgName: 'oldies stock photo.jpg',
+        },
+      },
+    };
+  },
+  components: {
+    'CT-Panel': ctPanel,
+  },
 };
 </script>
 
@@ -68,7 +75,7 @@ export default {
 .customer-testimonies--section {
   height: 100vh;
   background-color: #ddd;
-  border-top: 7px solid var(--red);
+  border-top: 7px solid var(--yellow);
 }
 
 .ct--outer {
@@ -79,6 +86,11 @@ export default {
   font-size: 4rem;
   color: var(--black);
   font-family: 'Archivo Black', sans-serif;
+}
+
+.subtext {
+  text-align: right;
+  -webkit-text-stroke: px #000;
 }
 
 .ct--inner {
@@ -116,6 +128,12 @@ export default {
 
 .panel--inner--body {
   padding: 1rem 2rem 0 2rem;
+  text-align: center;
+}
+
+.after-text {
+  padding: 6rem;
+  font-size: 1.35rem;
   text-align: center;
 }
 </style>

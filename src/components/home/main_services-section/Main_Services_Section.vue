@@ -74,7 +74,7 @@ export default {
   height: 100vh;
   padding: 0 15%;
   text-align: center;
-  border-top: 7px solid var(--yellow);
+  border-top: 7px solid var(--red);
 }
 
 .ms--header {
