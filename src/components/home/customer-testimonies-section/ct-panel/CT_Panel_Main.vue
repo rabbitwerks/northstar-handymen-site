@@ -3,7 +3,7 @@
     <div class="panel--inner--header fxbx">
       <div class="circle-avatar">
         <img class="avatar-img"
-          :src="require('@/assets/img/customer avatars/' + custData.imgName)"
+          :src="require('@/assets/img/' + custData.imgName)"
           alt="customer testimony avatar"
         >
       </div>

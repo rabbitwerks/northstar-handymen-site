@@ -8,15 +8,9 @@
     </p>
     <div class="panel--container fxbx flexgap-7">
 
-      <Panel-Item
-        :panelData="panelData.panel_1"
-      />
-      <Panel-Item
-        :panelData="panelData.panel_2"
-      />
-      <Panel-Item
-        :panelData="panelData.panel_3"
-      />
+      <Panel-Item :panelData="panelData.panel_1" />
+      <Panel-Item :panelData="panelData.panel_2" />
+      <Panel-Item :panelData="panelData.panel_3" />
 
     </div>
     <h3 class="mission-statement">
@@ -26,7 +20,7 @@
 </template>
 
 <script>
-import panelItem from './Panel_Item.vue';
+import panelItem from '../../reusable/Panel_Item.vue';
 
 export default {
   data() {
@@ -38,21 +32,21 @@ export default {
       panelData: {
         panel_1: {
           target: '',
-          imgFileName: 'dccdad0439.0.jpeg',
+          imgFileName: 'home/main services CTAs/dccdad0439.0.jpeg',
           imgAlt: 'indoors remodel stock photo',
           headerText: 'Indoors',
           panelText: 'We specialize in carpentery, plumbing and drywall. We also provide indoor demolition and remodeling services. Commercial site work available upon request.',
         },
         panel_2: {
           target: '',
-          imgFileName: 'backyard-landscaping-design.jpg',
+          imgFileName: 'home/main services CTAs/backyard-landscaping-design.jpg',
           imgAlt: 'outdoor patio stock photo',
           headerText: 'Outdoors',
           panelText: 'We specialize in carpentery, plumbing and drywall. We also provide indoor demolition and remodeling services. Commercial site work available upon request.',
         },
         panel_3: {
           target: '',
-          imgFileName: 'Small-Engine-Service-Center-Blog-1.jpg',
+          imgFileName: 'home/main services CTAs/Small-Engine-Service-Center-Blog-1.jpg',
           imgAlt: 'lawn mower repair stock photo',
           headerText: 'Odd Jobs',
           panelText: 'We specialize in carpentery, plumbing and drywall. We also provide indoor demolition and remodeling services. Commercial site work available upon request.',
@@ -88,9 +82,7 @@ export default {
   margin: 0 15% 5% 15%;
 }
 
-.panel--container {
-  width: 100%;
-}
+/* .panel-container located in main.css */
 
 .mission-statement {
   padding-top: 4rem;

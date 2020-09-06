@@ -2,7 +2,7 @@
   <section class="hero--section">
     <div class="hero--image--container">
       <img
-        src="@/assets/img/handyman.jpg"
+        src="@/assets/img/home/handyman.jpg"
         alt="Background image of handyman toolbelt"
         class="hero--image"
       />

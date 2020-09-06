@@ -46,3 +46,9 @@ body {
 .stroke--grey {
   -webkit-text-stroke: 3px var(--grey);
 }
+
+/* -- REUSABLE CROSS CMP STYLES -- */
+
+.panel--container {
+  width: 100%;
+}

@@ -2,7 +2,7 @@
   <div class="panel--item f1">
     <a href="" class="panel--img-link">
       <img
-        :src="require(`@/assets/img/panel img/` + panelData.imgFileName)"
+        :src="require(`@/assets/img/` + panelData.imgFileName)"
         :alt="panelData.imgAlt"
         class="panel--img"
       />

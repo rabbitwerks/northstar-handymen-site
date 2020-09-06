@@ -23,3 +23,9 @@
 - Main services has been componentized
 - Hyperlinked main service panels, no routes yet
 - Deleted hello world vue
+
+## 8/31/20
+
+- Finished customer testimoies section
+- Built out footer with links, copyright and credit
+- Added Services link to navbar
