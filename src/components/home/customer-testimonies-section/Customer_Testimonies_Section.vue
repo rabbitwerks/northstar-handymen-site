@@ -45,21 +45,21 @@ export default {
           body: `Choosing Northstar Handymen was the best desicion I made this year!
             Not only were my deck stairs repaired but the job was done fast and very affordably.
             Definitely recommending these guys!`,
-          imgName: 'home/customer-testimonies-section/jennifer stock photo.jpg',
+          imgName: 'home/customer avatars/jennifer stock photo.jpg',
         },
         cust_2: {
           name: 'Eddie T.',
           body: `Fast, efficient, reliable and affordable.
             My 4 favorite things when I look for a handyman to do some projects for me.
             Super friendly and willing to accomodate requests. 10 out of 10.`,
-          imgName: 'home/customer-testimonies-section/eddie stock photo.jpg',
+          imgName: 'home/customer avatars/eddie stock photo.jpg',
         },
         cust_3: {
           name: 'Jan & Jerry',
           body: `Matt and Abe helped us to find the best solution for our
             three-season porch renovation while keeping the costs as budget friendly as possible.
             The results were outstanding and we couldn't be happier. Thank you Northstar Handymen!`,
-          imgName: 'home/customer-testimonies-section/oldies stock photo.jpg',
+          imgName: 'home/customer avatars/oldies stock photo.jpg',
         },
       },
     };

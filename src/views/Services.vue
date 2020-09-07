@@ -48,7 +48,7 @@ export default {
 .section--banner {
   background-color: #000;
   height: 10rem;
-  background-image: url('../assets/img/site images/indoors_banner_200pxH.jpg');
+  background-image: url('../assets/img/services/banner-images/indoors_banner_200pxH.jpg');
 }
 
 .section--header {
