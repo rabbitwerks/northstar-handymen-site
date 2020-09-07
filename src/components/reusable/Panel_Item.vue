@@ -1,7 +1,10 @@
 <template>
   <div class="panel--item f1">
-    <router-link v-if="panelData.navigateRoute"
-      :to="panelData.navigateRoute" class="panel--img-link">
+    <router-link
+      v-if="panelData.navigateRoute"
+      :to="panelData.navigateRoute"
+      class="panel--img-link"
+    >
       <img
         :src="require(`@/assets/img/` + panelData.imgFileName)"
         :alt="panelData.imgAlt"
@@ -40,7 +43,7 @@ export default {
   height: 25rem;
   border: 5px solid var(--grey);
   border-radius: .5rem;
-  transition: border 150ms;
+  transition: all 150ms linear;
   overflow: hidden;
   filter: drop-shadow(0 -.5rem 1rem var(--grey));
 }
@@ -56,7 +59,7 @@ export default {
 .panel--img {
   width: 100%;
   transition: transform .2s;
-  border-bottom: 3px solid var(--grey);
+  border-bottom: 4px solid var(--grey);
 }
 
 .panel--img:hover {

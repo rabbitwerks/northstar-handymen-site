@@ -8,8 +8,8 @@
       </div>
       <div class="section--main panel--container fxbx sp-ctr flexgap-7">
         <Panel-Item :panelData="panelData.panel_1" />
-        <Panel-Item :panelData="panelData.panel_1" />
-        <Panel-Item :panelData="panelData.panel_1" />
+        <Panel-Item :panelData="panelData.panel_2" />
+        <Panel-Item :panelData="panelData.panel_3" />
       </div>
     </section>
     <section class="main-services--section" id="serv_outdoors">
@@ -36,9 +36,27 @@ export default {
       panelData: {
         panel_1: {
           target: '#',
-          imgFileName: 'services/banner-images/indoors_banner_200pxH.jpg',
+          imgFileName: 'services/indoors/carpentry_panel.jpg',
           imgAltText: 'Carpentry Stock Photo',
           headerText: 'Carpentry',
+          panelText: `With over 5 years of carpentry services under our belt,
+            we can accomplish almost anything you need done, that doesn't require
+            a full construction crew!`,
+        },
+        panel_2: {
+          target: '#',
+          imgFileName: 'services/indoors/carpentry_panel.jpg',
+          imgAltText: 'Heating and Cooling Stock Photo',
+          headerText: 'Heating and Cooling',
+          panelText: `With over 5 years of carpentry services under our belt,
+            we can accomplish almost anything you need done, that doesn't require
+            a full construction crew!`,
+        },
+        panel_3: {
+          target: '#',
+          imgFileName: 'services/indoors/carpentry_panel.jpg',
+          imgAltText: 'Plumbing Stock Photo',
+          headerText: 'Plumbing',
           panelText: `With over 5 years of carpentry services under our belt,
             we can accomplish almost anything you need done, that doesn't require
             a full construction crew!`,

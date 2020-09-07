@@ -1,6 +1,6 @@
 # Mission Statement
 
-We aim to provide punctual home and business service needs to a broad spectrum of clients. We provide a more personable experience here at NorthStar, which is appealing to home owners or small business owners who need odd jobs completed reliably.
+We aim to provide punctual home and business service needs to a broad spectrum of clients. We provide a more personable experience here at NorthStar, which is appealing to home owners or small business owners who need odd jobs completed reliably and quickly.
 
 ## Revision Edits
 

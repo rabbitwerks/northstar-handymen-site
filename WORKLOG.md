@@ -29,3 +29,11 @@
 - Finished customer testimoies section
 - Built out footer with links, copyright and credit
 - Added Services link to navbar
+
+## 9/7/20
+
+- Started build out of Services page
+- Updated images and file/folder structure
+- added scroll behavior to router
+- updated eslintrc (save for global use)
+- pushed all code to github, finally.
