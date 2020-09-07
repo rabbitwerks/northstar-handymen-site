@@ -24,8 +24,4 @@ export default {
 
 <style scoped>
 
-.home {
-  border-top: 7px solid var(--black);
-}
-
 </style>

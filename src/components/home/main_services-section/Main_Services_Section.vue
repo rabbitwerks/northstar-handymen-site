@@ -31,21 +31,24 @@ export default {
       We also specialize in one-off odd jobs such as small engine repair, lawn care, etc.`,
       panelData: {
         panel_1: {
-          target: '',
+          navigateRoute: '/services#serv_indoors',
           imgFileName: 'home/main services CTAs/dccdad0439.0.jpeg',
           imgAlt: 'indoors remodel stock photo',
           headerText: 'Indoors',
-          panelText: 'We specialize in carpentery, plumbing and drywall. We also provide indoor demolition and remodeling services. Commercial site work available upon request.',
+          panelText: `
+            We specialize in carpentery, plumbing and drywall.
+            We also provide indoor demolition and remodeling services.
+            Commercial site work is available upon request.`,
         },
         panel_2: {
-          target: '',
+          navigateRoute: '/services#serv_outdoors',
           imgFileName: 'home/main services CTAs/backyard-landscaping-design.jpg',
           imgAlt: 'outdoor patio stock photo',
           headerText: 'Outdoors',
           panelText: 'We specialize in carpentery, plumbing and drywall. We also provide indoor demolition and remodeling services. Commercial site work available upon request.',
         },
         panel_3: {
-          target: '',
+          navigateRoute: '',
           imgFileName: 'home/main services CTAs/Small-Engine-Service-Center-Blog-1.jpg',
           imgAlt: 'lawn mower repair stock photo',
           headerText: 'Odd Jobs',

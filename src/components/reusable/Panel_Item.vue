@@ -1,12 +1,19 @@
 <template>
   <div class="panel--item f1">
-    <a href="" class="panel--img-link">
+    <router-link v-if="panelData.navigateRoute"
+      :to="panelData.navigateRoute" class="panel--img-link">
       <img
         :src="require(`@/assets/img/` + panelData.imgFileName)"
         :alt="panelData.imgAlt"
         class="panel--img"
       />
-    </a>
+    </router-link>
+    <img
+      v-else
+      :src="require(`@/assets/img/` + panelData.imgFileName)"
+      :alt="panelData.imgAlt"
+      class="panel--img"
+    />
     <a href="" class="panel--header-link">
       <h3 class="panel--header">{{ panelData.headerText }}</h3>
     </a>
@@ -54,7 +61,7 @@ export default {
 
 .panel--img:hover {
   transform: scale(1.1) translateY(-5%);
-  border-bottom: 3px solid var(--red);
+  border-bottom: 4px solid var(--red);
 }
 
 .panel--header {

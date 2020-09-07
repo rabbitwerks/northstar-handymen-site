@@ -2,7 +2,11 @@
   <div id="app">
     <Nav-Bar />
     <div class="header-banner--container">
-      <img src="./assets\img\Linkdin cover.jpg" alt="" class="header-banner--img">
+      <img
+        src="./assets\img\Linkdin cover.jpg"
+        alt="Northstar Handymen Logo Banner"
+        class="header-banner--img"
+      />
     </div>
     <router-view/>
     <Footer />

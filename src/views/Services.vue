@@ -1,9 +1,21 @@
 <template>
   <div class="main-sevices--outer">
-    <section class="main-services--indoors">
+    <section class="main-services--section" id="serv_indoors">
       <div class="section--banner">
         <div class="section--header fxbx sp-ctr">
           <h1>Indoors</h1>
+        </div>
+      </div>
+      <div class="section--main panel--container fxbx sp-ctr flexgap-7">
+        <Panel-Item :panelData="panelData.panel_1" />
+        <Panel-Item :panelData="panelData.panel_1" />
+        <Panel-Item :panelData="panelData.panel_1" />
+      </div>
+    </section>
+    <section class="main-services--section" id="serv_outdoors">
+      <div class="section--banner">
+        <div class="section--header fxbx sp-ctr">
+          <h1>Outdoors</h1>
         </div>
       </div>
       <div class="section--main panel--container fxbx sp-ctr flexgap-7">
@@ -41,7 +53,7 @@ export default {
 </script>
 
 <style scoped>
-.main-services--indoors {
+.main-services--section {
   height: 100vh;
   position: relative;
 }
@@ -54,12 +66,21 @@ export default {
 .section--header {
   position: relative;
   z-index: 10;
-  color: var(--yellow);
   height: 100%;
 }
 .section--header {
   font-size: 3rem;
   background-color: rgba(0, 0, 0, .7);
+}
+
+#serv_indoors .section--header {
+  color: var(--yellow);
+}
+#serv_indoors {
+  border-bottom: 7px solid var(--yellow);
+}
+#serv_outdoors .section--header {
+  color: var(--red);
 }
 
 .section--main {

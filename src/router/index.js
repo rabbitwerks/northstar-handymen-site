@@ -37,6 +37,16 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+      };
+    }
+    if (savedPosition) {
+      return savedPosition;
+    }
+  },
 });
 
 export default router;
