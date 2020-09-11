@@ -5,48 +5,17 @@
         <h1>Indoors</h1>
       </div>
     </div>
-    <div class="section--main row-item-container fxbx fd-c sp-ctr fxg-4">
-      <div class="row-item fxbx">
-        <div class="row-item--image f1">
-          <img
-            :src="require(`@/assets/img/` + panelData.panel_1.imgFileName)"
-            :alt="panelData.panel_1.imgAltText"
-          >
-        </div>
-        <div class="row-item--content f4 fxbx fd-c flexgap-3">
-          <h1 class="ri-content--header">{{ panelData.panel_1.headerText }}</h1>
-          <div class="ri-content--description">{{ panelData.panel_1.panelText }}</div>
-        </div>
-      </div>
-      <div class="row-item fxbx">
-        <div class="row-item--image f1">
-          <img
-            :src="require(`@/assets/img/` + panelData.panel_2.imgFileName)"
-            :alt="panelData.panel_2.imgAltText"
-          >
-        </div>
-        <div class="row-item--content f4 fxbx fd-c flexgap-3">
-          <h1 class="ri-content--header">{{ panelData.panel_2.headerText }}</h1>
-          <div class="ri-content--description">{{ panelData.panel_2.panelText }}</div>
-        </div>
-      </div>
-      <div class="row-item fxbx">
-        <div class="row-item--image f1">
-          <img
-            :src="require(`@/assets/img/` + panelData.panel_3.imgFileName)"
-            :alt="panelData.panel_3.imgAltText"
-          >
-        </div>
-        <div class="row-item--content f4 fxbx fd-c flexgap-3">
-          <h1 class="ri-content--header">{{ panelData.panel_3.headerText }}</h1>
-          <div class="ri-content--description">{{ panelData.panel_3.panelText }}</div>
-        </div>
-      </div>
+    <div class="section--main row-item--container fxbx fd-c sp-ctr fxg-4">
+      <Row-Item :panel="panelData.panel_1" />
+      <Row-Item :panel="panelData.panel_2" />
+      <Row-Item :panel="panelData.panel_3" />
+
     </div>
   </section>
 </template>
 <script>
 import panelItem from '../reusable/Panel_Item.vue';
+import rowItem from '../reusable/Row_Item.vue';
 
 export default {
   //  props: {
@@ -55,9 +24,10 @@ export default {
   //      required: true,
   //    },
   //  },
-  // components: {
-  //   'Panel-Item': panelItem,
-  // },
+  components: {
+    // 'Panel-Item': panelItem,
+    'Row-Item': rowItem,
+  },
   data() {
     return {
       panelData: {
@@ -99,8 +69,9 @@ export default {
 </script>
 
 <style scoped>
-.panel--container {
-  width: 80%,
+.main-services--section {
+  height: 100vh;
+  position: relative;
 }
 .section--banner {
   background-color: #000;
@@ -112,10 +83,13 @@ export default {
   position: relative;
   z-index: 10;
   height: 100%;
-}
-.section--header {
   font-size: 3rem;
   background-color: rgba(0, 0, 0, .7);
+}
+
+.section--main {
+  padding: 0 15%;
+  height: 80%;
 }
 
 #serv_indoors .section--header {
@@ -125,25 +99,10 @@ export default {
 #serv_indoors {
   border-bottom: 7px solid var(--yellow);
 }
-.section--main {
-  padding: 0 15%;
-  height: 80%;
-}
-.row-item--image {
-  width: 20%;
-}
-.row-item--image img {
-  width: 100%;
-  border: 3px solid var(--grey);
-  border-radius: .4rem;
 
+#serv_outdoors .section--header {
+  color: var(--red);
+  border-bottom: 7px solid var(--grey);
 }
 
-.row-item--content {
-  margin-left: 2rem;
-}
-
-.ri-content--description {
-  margin-left: 0;
-}
 </style>

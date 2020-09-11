@@ -1,6 +1,11 @@
 <template>
   <div class="main-sevices--outer">
     <Indoor-Services />
+      <!-- <div class="section--main panel--container fxbx sp-ctr flexgap-7">
+        <Panel-Item :panelData="panelData.panel_1" />
+        <Panel-Item :panelData="panelData.panel_2" />
+        <Panel-Item :panelData="panelData.panel_3" />
+      </div> -->
 
     <!-- <section class="main-services--section" id="serv_outdoors">
       <div class="section--banner">
@@ -67,9 +72,16 @@ export default {
 </script>
 
 <style scoped>
-.main-services--section {
-  height: 100vh;
-  position: relative;
+
+.section--banner {
+  background-color: #000;
+  height: 8rem;
+  background-image: url('../assets/img/services/banner-images/indoors_banner_200pxH.jpg');
 }
 
+/* .section--main {
+  padding: 0 15%;
+  height: 80%;
+}
+*/
 </style>
