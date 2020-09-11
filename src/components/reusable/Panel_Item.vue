@@ -17,9 +17,21 @@
       :alt="panelData.imgAlt"
       class="panel--img"
     />
-    <a href="" class="panel--header-link">
-      <h3 class="panel--header">{{ panelData.headerText }}</h3>
-    </a>
+    <router-link
+      v-if="panelData.navigateRoute"
+      :to="panelData.navigateRoute"
+      class="panel--header-link"
+    >
+      <h3
+        class="panel--header"
+        >{{ panelData.headerText }}
+      </h3>
+    </router-link>
+    <h3
+      v-else
+      class="panel--header"
+      >{{ panelData.headerText }}
+    </h3>
       <p class="panel-text">
         {{ panelData.panelText }}
       </p>
@@ -46,6 +58,7 @@ export default {
   transition: all 150ms linear;
   overflow: hidden;
   filter: drop-shadow(0 -.5rem 1rem var(--grey));
+  text-align: center;
 }
 
 .panel--item:hover {
