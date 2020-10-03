@@ -1,23 +1,26 @@
 <template>
-  <section class="main-services--section" id="serv_indoors">
+  <section class="main-services--section" id="serv_outdoors">
     <div class="section--banner">
       <div class="section--header fxbx sp-ctr">
-        <h1>Indoors</h1>
+        <h1>Outdoors</h1>
       </div>
     </div>
     <div
-      class="section--main row-item--container fxbx fd-c sp-ctr fxg-4"
-
-      >
+      class="section--main row-item--container fxbx fd-c sp-ctr fxg-4">
       <Row-Item
         :rowData="rowData.panel_1"
+        :class="{ 'fd-rr': rowData.renderDirection === 'right' }"
+        :style="{ 'text-align': 'right' }"
       />
       <Row-Item
         :rowData="rowData.panel_2"
+        :class="{ 'fd-rr': rowData.renderDirection === 'right' }"
+        :style="{ 'text-align': 'right' }"
       />
       <Row-Item
         :rowData="rowData.panel_3"
-
+        :class="{ 'fd-rr': rowData.renderDirection === 'right' }"
+        :style="{ 'text-align': 'right' }"
       />
     </div>
   </section>
@@ -113,6 +116,10 @@ export default {
 #serv_outdoors .section--header {
   color: var(--red);
   border-bottom: 7px solid var(--grey);
+}
+
+#serv_outdoors {
+  border-bottom: 7px solid var(--red);
 }
 
 </style>

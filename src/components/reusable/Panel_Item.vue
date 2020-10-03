@@ -81,8 +81,9 @@ export default {
 }
 
 .panel--header {
-  padding: .5rem 0;
-  font-size: 1.3rem;
+  padding: .25rem 0;
+  font-size: 1.6rem;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 .panel--header-link {

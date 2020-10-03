@@ -1,6 +1,7 @@
 <template>
   <div class="main-sevices--outer">
     <Indoor-Services />
+    <Outdoor-Services />
       <!-- <div class="section--main panel--container fxbx sp-ctr flexgap-7">
         <Panel-Item :panelData="panelData.panel_1" />
         <Panel-Item :panelData="panelData.panel_2" />
@@ -24,6 +25,7 @@
 
 <script>
 import indoorServices from '../components/main-services/Indoor_Services.vue';
+import outdoorServices from '../components/main-services/Outdoor_Services.vue';
 import panelItem from '../components/reusable/Panel_Item.vue';
 
 export default {
@@ -67,6 +69,7 @@ export default {
   components: {
     // 'Panel-Item': panelItem,
     'Indoor-Services': indoorServices,
+    'Outdoor-Services': outdoorServices,
   },
 };
 </script>
