@@ -23,18 +23,11 @@
   </section>
 </template>
 <script>
-// import panelItem from '../reusable/Panel_Item.vue';
+
 import rowItem from '../reusable/Row_Item.vue';
 
 export default {
-  //  props: {
-  //    rowData: {
-  //      type: Object,
-  //      required: true,
-  //    },
-  //  },
   components: {
-    // 'Panel-Item': panelItem,
     'Row-Item': rowItem,
   },
   data() {

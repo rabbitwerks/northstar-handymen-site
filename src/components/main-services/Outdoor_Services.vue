@@ -10,34 +10,26 @@
       <Row-Item
         :rowData="rowData.panel_1"
         :class="{ 'fd-rr': rowData.renderDirection === 'right' }"
-        :style="{ 'text-align': 'right' }"
+        :style="{ 'text-align': rowData.renderDirection }"
       />
       <Row-Item
         :rowData="rowData.panel_2"
         :class="{ 'fd-rr': rowData.renderDirection === 'right' }"
-        :style="{ 'text-align': 'right' }"
+        :style="{ 'text-align': rowData.renderDirection }"
       />
       <Row-Item
         :rowData="rowData.panel_3"
         :class="{ 'fd-rr': rowData.renderDirection === 'right' }"
-        :style="{ 'text-align': 'right' }"
+        :style="{ 'text-align': rowData.renderDirection }"
       />
     </div>
   </section>
 </template>
 <script>
-// import panelItem from '../reusable/Panel_Item.vue';
 import rowItem from '../reusable/Row_Item.vue';
 
 export default {
-  //  props: {
-  //    rowData: {
-  //      type: Object,
-  //      required: true,
-  //    },
-  //  },
   components: {
-    // 'Panel-Item': panelItem,
     'Row-Item': rowItem,
   },
   data() {
